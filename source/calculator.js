@@ -80,7 +80,7 @@ function validateNumsInArray(arrayToValidate=[]){
     arrayToValidate.forEach(x=>{
         if(x instanceof String || x === undefined){
 
-            throw new myValidator.ValidationError("Value is either string or undefined!")
+            throw new myValidator.ValidationError("Value can't be string or undefined!")
         }
     })
 }
